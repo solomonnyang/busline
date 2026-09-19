@@ -39,6 +39,9 @@ expo-connect-qr.png
 # Deployment runbook (server-specific; kept out of version control)
 DEPLOY_CPANEL.txt
 
+# Local opencode configuration (skills live outside version control)
+.opencode/
+
 # Composer PHAR (build artifact)
 composer.phar
 
