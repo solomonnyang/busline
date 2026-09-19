@@ -1,0 +1,78 @@
+# ------------------------------------------------------------------
+# OS / editor
+# ------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.tmp
+
+# ------------------------------------------------------------------
+# Logs / debug artifacts
+# ------------------------------------------------------------------
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.vite/
+
+# ------------------------------------------------------------------
+# Secrets & environment files (never commit credentials)
+# ------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.crt
+*.mobileprovision
+
+# Android signing material
+*.keystore
+*.jks
+
+# Runtime-generated QR (dev convenience only)
+expo-connect-qr.png
+
+# Composer PHAR (build artifact)
+composer.phar
+
+# ------------------------------------------------------------------
+# PHP / Composer dependencies
+# ------------------------------------------------------------------
+vendor/
+backend/vendor/
+
+# Backend runtime data (keep the web-hardeners):
+# CI4 writable contents are per-environment; only the protective
+# .htaccess + index.html are tracked.
+backend/writable/*
+!backend/writable/.htaccess
+!backend/writable/index.html
+
+# ------------------------------------------------------------------
+# Frontend (Vue + Vite)
+# ------------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ------------------------------------------------------------------
+# Mobile (Expo / React Native)
+# ------------------------------------------------------------------
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/android/
+mobile/ios/
+mobile/.env
+mobile/.env.*
+mobile/*.jks
+mobile/*.keystore
+
+# ------------------------------------------------------------------
+# Dependencies anywhere (skills, tooling, etc.)
+# ------------------------------------------------------------------
+node_modules/
