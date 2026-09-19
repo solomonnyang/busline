@@ -36,6 +36,9 @@ yarn-error.*
 # Runtime-generated QR (dev convenience only)
 expo-connect-qr.png
 
+# Deployment runbook (server-specific; kept out of version control)
+DEPLOY_CPANEL.txt
+
 # Composer PHAR (build artifact)
 composer.phar
 
